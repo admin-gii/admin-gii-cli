@@ -1,0 +1,31 @@
+{
+  "name": "admin-gii-cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "admin-gii": "./bin/admin-gii.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "bin/admin-gii.js",
+  "keywords": [
+    "gii",
+    "admin",
+    "generator",
+    "cli"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Islom",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^4.1.1",
+    "cross-spawn": "^7.0.3",
+    "fs-extra": "^10.0.0",
+    "semver": "^7.3.5",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
