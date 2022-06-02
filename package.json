@@ -1,14 +1,14 @@
 {
   "name": "admin-gii-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "bin": {
-    "admin-gii": "./bin/admin-gii.js"
+    "admin-gii-cli": "./bin/admin-gii-cli.js"
   },
   "publishConfig": {
     "access": "public"
   },
-  "main": "bin/admin-gii.js",
+  "main": "bin/admin-gii-cli.js",
   "keywords": [
     "gii",
     "admin",
@@ -18,7 +18,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Islom",
+  "author": "Islom Toshpulatov",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
