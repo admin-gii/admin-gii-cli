@@ -1,6 +1,6 @@
 {
   "name": "admin-gii-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "bin": {
     "admin-gii-cli": "./bin/admin-gii-cli.js"
