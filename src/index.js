@@ -63,7 +63,7 @@ function init() {
   checkForLatestVersion()
     .catch(() => {
       try {
-        return execSync("npm view admin-gii version").toString().trim();
+        return execSync("npm view admin-gii-cli version").toString().trim();
       } catch (e) {
         return null;
       }
@@ -73,8 +73,8 @@ function init() {
         console.log();
         console.error(
           chalk.yellow(
-            `You are running \`admin-gii\` ${packageJson.version}, which is behind the latest release (${latest}).\n\n` +
-              "We recommend always using the latest version of admin-gii if possible."
+            `You are running \`admin-gii-cli\` ${packageJson.version}, which is behind the latest release (${latest}).\n\n` +
+              "We recommend always using the latest version of admin-gii-cli if possible."
           )
         );
         console.log();
@@ -376,7 +376,7 @@ function checkForLatestVersion() {
   return new Promise((resolve, reject) => {
     https
       .get(
-        "https://registry.npmjs.org/-/package/admin-gii/dist-tags",
+        "https://registry.npmjs.org/-/package/admin-gii-cli/dist-tags",
         (res) => {
           if (res.statusCode === 200) {
             let body = "";
